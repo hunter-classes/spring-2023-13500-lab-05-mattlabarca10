@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <iostream>
 
-
+//If n is divisible by d, the function should return true, otherwise return false
 bool isDivisibleBy(int n, int d)
 {
     if(n%d == 0)
@@ -10,6 +10,7 @@ bool isDivisibleBy(int n, int d)
         return false;
 }
 
+//The function should return true if n is a prime, otherwise return false
 bool isPrime(int n)
 {
     if(n>=2){
@@ -23,6 +24,7 @@ bool isPrime(int n)
         return false;
 }
 
+//returns the smallest prime greater than n
 int nextPrime(int n)
 {
     int i = n+1;
@@ -31,6 +33,7 @@ int nextPrime(int n)
     return i;
 }
 
+//returns the number of prime numbers in the interval a ≤ x ≤ b
 int countPrimes(int a, int b)
 {
     int count = 0;
@@ -41,7 +44,7 @@ int countPrimes(int a, int b)
     return count;
 }
 
-
+//determines whether or not its argument is a twin prime (if either N-2 or N+2 (or both of them) is also a prime)
 bool isTwinPrime(int n)
 {
     if(isPrime(n)==true){
@@ -54,6 +57,7 @@ bool isTwinPrime(int n)
         return false;
 }
 
+//returns the smallest twin prime greater than n
 int nextTwinPrime(int n)
 {
     int i = n+1;
@@ -62,6 +66,7 @@ int nextTwinPrime(int n)
     return i;
 }
 
+//returns the largest twin prime in the range a ≤ N ≤ b.
 int largestTwinPrime(int a, int b)
 {
     int largest = -1;
